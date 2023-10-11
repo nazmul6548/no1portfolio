@@ -1,0 +1,404 @@
+@keyframes music {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+/* <!-- header css start here --> */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image:url(./img/swide-view-athlete.jpg);
+    background-size:cover;
+    background-position: top;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+h2.logo {
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+}
+span {
+    color: red;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .6s;
+
+}
+nav ul li a:hover{
+    color: red;
+   
+}
+.btn {
+    background-color: red;
+    color: rgb(0, 0, 0);
+    border: 1px solid transparent;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform .6s;
+}
+.btn:hover{
+    color: white;
+    transform: scale(1.2);
+}
+.content {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+h1{
+    color: white;
+    margin: 20px 0 20px;
+    font-size: 60px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+h6{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.newsletter form{
+    width: 380px;
+}
+.newsletter form input:first-child{
+   
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid red;
+    outline: none;
+    border-radius: 30px;
+    
+}
+.newsletter form input:last-child{
+    
+    position: absolute;
+        
+    display: inline-block;
+        
+    outline: none;
+        
+    border: none;
+        
+    padding: 10px 30px;
+        
+    border-radius: 30px;
+    border: 2px solid red;
+    background-color: red;
+    color: black;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 198.5px;
+    
+    right: 273px;
+    transition: transform 2s;
+    }
+    .newsletter form input:last-child:hover{
+         transform: rotate(360deg) scale(1.5);
+         cursor: pointer;
+         color: white;
+    }
+    /* about area css here */
+    .introduce{
+     background-color:black;
+     padding: 100px 0px;
+     width:100%;
+    }
+    .main img{
+      width: auto;
+      height: 500px;
+      border-radius: 20px;
+      margin-left: 10%;
+      
+    }
+    .about-text{
+        width: 550px;
+        margin-left: 58px;
+    }
+    .main{
+        width: 1130px;
+        max-width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .about-text h2{
+        color: white;
+        font-weight: bold;
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+    .about-text h5{
+        color: white;
+        font-weight: initial;
+        font-size: 30px;
+        margin-bottom: 25px;
+
+    }
+    .about-text p{
+        color: white;
+        font-size: 16px;
+        margin-bottom: 45px;
+        letter-spacing: 1px;
+        text-align: justify;
+        line-height: 28px;
+    }
+    button{
+        background-color:black;
+        padding: 7px 20px;
+        border-radius: 35px;
+        color: white;
+        font-size: 20px;
+        border: 2px solid rgb(255, 1, 1);
+        transition: .9s;
+       
+        
+    }
+    button:hover{
+        background-color: rgb(232, 0, 0);
+        transform: scale(1.3);
+        border: 1px solid white;
+        color: #000;
+       
+       
+        
+    }
+
+    /* services css */
+    .services{
+       
+        width: 100%;
+        padding: 100px 0px;
+        background-color: #000;
+    }
+    .tittle h2{
+        color: white;
+        font-size: 75px;
+        width: 1130px;
+        margin: 30px auto;
+        text-align: center;
+    }
+    .card{
+        color:#fcfc;
+        font-size: 30px;
+        height: 365px;
+        width: 335px;
+        padding: 20px 35px;
+        background: #191919;
+        border-radius: 20px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        min-height: 400px;
+    }
+    .card i {
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0px;
+        color: rgb(246, 3, 3);
+    }
+    
+    .fa-solid:hover{
+        color:white;
+        transition: .9s;
+    }
+    h5{
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .card p{
+        color: #fcfc;
+        margin-bottom: 35px;
+        font-size: 16px;
+        line-height: 27px;
+        
+    }
+
+   .card .buttom{
+    background-color:black;
+    padding: 9px 22px;
+    border-radius: 35px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid rgb(255, 1, 1);
+    transition: .9s;
+    margin-top: 25px;
+    text-decoration: none;
+    
+}
+.card .buttom:hover{
+    background-color: red;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    
+}
+
+/* contact css */
+
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #000;
+    transition: border 0.3s, color 0.3s;
+    
+}
+.contact-me p:hover{
+    border: 3px solid #e74c3c; 
+    
+}
+.contact-me .buttom-2{
+    background-color:black;
+    padding: 7px 20px;
+    border-radius: 35px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid red;
+    transition: .9s;
+    text-decoration: none;
+    animation: music 1s infinite linear;
+}
+.contact-me .buttom-2:hover{
+    background-color: red;
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* footer css */
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50px;
+    margin: 22px 10px;
+    text-decoration: none;
+    color: red;
+    transition: 1s;
+    
+}
+.social a:hover{
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    transform: scale(1.3);
+}
+
+/* footer end */
+.end-footer{
+    background-color: #000;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    
+    align-items: center;
+}
+.end-footer p{
+    position: absolute;
+    color: red;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.p{
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+    
+}
+/* the end */
